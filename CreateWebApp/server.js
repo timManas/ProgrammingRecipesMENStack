@@ -11,7 +11,7 @@ let app = express()
 
 // Core Logic
 app.use(express.urlencoded({extended: false}))      // Boiler plate code, Express will add all FORM objects to body object. Then add body object to request object. By default express does not do this
-app.listen(3030)         // App will listen at Port 3000
+app.listen(3001)         // App will listen at Port 3000
 
 
 
@@ -83,13 +83,13 @@ app.post('/create-item', function(req, res) {
 3. How to start application ?
 - Go to command line and type:
     node server.js
-- Then go to localhost:3030 
+- Then go to localhost:3001
 
 
 Question
 - What does this do ?
 app.get("/", function(req,res){}
-> If the user goes to localhost home page (aka localhost:3030) then we will display the following HTML back as a RESPONSE
+> If the user goes to localhost home page (aka localhost:3001) then we will display the following HTML back as a RESPONSE
 
 
 Note
